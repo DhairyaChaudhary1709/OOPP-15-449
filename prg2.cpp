@@ -8,6 +8,7 @@ void swapbyvalue(int x,int y){
     cout<<"Call by value is: "<<x<<" and "<<y<<endl;
 }
 
+
 void swapbyrefrence(int &x,int &y){
     int temp= x;
     x = y;
