@@ -9,14 +9,14 @@ private:
     double balance;
 
 public:
-    // Constructor
+    
     BankAccount(int accNo, string name, double initialBalance) {
         accountNumber = accNo;
         accountHolder = name;
         balance = initialBalance;
     }
 
-    // Deposit function
+    
     void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -26,7 +26,7 @@ public:
         }
     }
 
-    // Withdrawal function
+    
     void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {
             balance -= amount;
@@ -36,7 +36,7 @@ public:
         }
     }
 
-    // Display account details
+    
     void display() const {
         cout << "\nAccount Number : " << accountNumber << endl;
         cout << "Account Holder : " << accountHolder << endl;
